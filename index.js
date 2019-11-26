@@ -6,6 +6,7 @@ const fs = require('fs');
 listingFiles = async () => {
     try {
         aws.config.setPromisesDependency();
+        console.log(process.env.AWS_SECRET_ACCESS_KEY)
         aws.config.update({
             accessKeyId: process.env.AWS_ACCESS_KEY_ID,
             secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY,
@@ -55,6 +56,6 @@ const uploadFile = (fileName) => {
     }
 };
 
-//listingFiles();
-uploadFile('./fileToUpload.txt');
+listingFiles();
+//uploadFile('./fileToUpload.txt');
 
