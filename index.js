@@ -56,5 +56,5 @@ const uploadFile = (fileName) => {
 };
 
 //listingFiles();
-uploadFile('./fileToUpload.txt')
+uploadFile('./fileToUpload.txt');
 
