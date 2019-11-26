@@ -16,6 +16,7 @@ listingFiles = async () => {
         const s3 = new aws.S3();
         const result = await s3.listObjectsV2({
             Bucket: 'lcloud-427-ts',
+            Prefix: 'filter' //filtering files using Prefix options
         }).promise();
         for (let i = 0; i < result.Contents.length; i++) {
             console.log(result.Contents[i])
