@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/sossnowski/lcloud#readme",
   "dependencies": {
-    "aws-sdk": "^2.579.0",
+    "aws-sdk": "^2.814.0",
     "dotenv": "^8.2.0",
     "fs": "0.0.1-security"
   }
